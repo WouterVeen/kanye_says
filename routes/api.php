@@ -25,7 +25,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  * Routes to use with JWT token, at this moment not implemented
  */
 Route::group([
-
     'middleware' => 'api',
     'prefix' => 'auth'
 
