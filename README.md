@@ -33,7 +33,9 @@ In your host file you can specifie the following
 ``192.168.10.10 kanye_speak.app``
 
 So ``vagrant up`` homestead and navigate to the folder.
-There execute ```php artisan migrate && php artisan db:seed```
+Run ```composer install``` and then execute ```php artisan migrate && php artisan db:seed```
+
+Then run ```npm install && npm run dev```
 
 Navigate in a browser to [here](https://kanye_says.app)
 
@@ -42,5 +44,7 @@ In the upper right corner you can login, credentials are as follow:
 email: kanye@kanye.west 
 password: kanye
 ```
+
+To test run ```phpunit tests/Unit/Services/TestKanyeSpeakService```
 
 For security I wanted to implement JWT but time was short.
