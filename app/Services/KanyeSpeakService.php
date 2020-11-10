@@ -11,12 +11,12 @@ class KanyeSpeakService
 
     /**
      * KanyeSpeakService constructor.
+     *
+     * @param \GuzzleHttp\Client $client
      */
-    public function __construct()
+    public function __construct(Client $client)
     {
-        $this->client = new Client([
-            'base_uri' => 'https://api.kanye.rest'
-        ]);
+        $this->client = $client;
     }
 
     /**
